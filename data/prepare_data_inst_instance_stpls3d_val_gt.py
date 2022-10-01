@@ -174,11 +174,10 @@ def prepareInstGt(valOutDir, val_gtFolder,semantic_label_idxs):
 if __name__ == '__main__':
 
     data_folder = os.path.join(os.path.dirname(os.getcwd()),'dataset/Synthetic_v3_InstanceSegmentation')
-    filesOri = sorted(glob.glob(data_folder + '/*.txt'))
     valSplit = [5, 10, 15, 20, 25]
     split = 'val'
     valOutDir = os.path.join(data_folder,split)
-
+    print(valOutDir)
     semantic_label_idxs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
     semantic_label_names = ['ground', 'Building', 'LowVegetation', 'MediumVegetation', 'HighVegetation', 'Vehicle',
                             'Truck', 'Aircraft', 'MilitaryVehicle', 'Bike', 'Motorcycle', 'LightPole', 'StreetSgin',

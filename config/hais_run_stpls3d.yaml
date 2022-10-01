@@ -26,7 +26,7 @@ STRUCTURE:
   width: 16
   block_residual: True
   block_reps: 2
-  use_coords: True
+  use_coords: False
 
 TRAIN:
   epochs: 500

@@ -183,6 +183,7 @@ if __name__ == '__main__':
                             'Truck', 'Aircraft', 'MilitaryVehicle', 'Bike', 'Motorcycle', 'LightPole', 'StreetSgin',
                             'Clutter', 'Fence']
     val_gtFolder = os.path.join(data_folder,'val_gt')
+    print(val_gtFolder)
     os.makedirs(val_gtFolder,exist_ok=True)
     prepareInstGt(valOutDir, val_gtFolder, semantic_label_idxs)
 
